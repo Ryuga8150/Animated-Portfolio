@@ -5,7 +5,6 @@ import ToggleButton from "./toggleButton/ToggleButton";
 import styles from "./Sidebar.module.scss";
 import { motion } from "framer-motion";
 
-type Props = {};
 const variants = {
   open: {
     clipPath: "circle(1200px at 50px 50px)",
@@ -26,7 +25,7 @@ const variants = {
     },
   },
 };
-const Sidebar = (props: Props) => {
+const Sidebar = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (

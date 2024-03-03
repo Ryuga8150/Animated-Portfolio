@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import styles from "./Hero.module.scss";
 import { motion } from "framer-motion";
-type Props = {};
 
 const textVariants = {
   initial: {
@@ -42,7 +40,7 @@ const sliderVariants = {
   },
 };
 
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.wrapper}>

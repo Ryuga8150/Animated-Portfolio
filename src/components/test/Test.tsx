@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import styles from "./page.module.scss";
 import { motion } from "framer-motion";
-type Props = {};
 
-const Test = (props: Props) => {
+const Test = () => {
   const [open, setOpen] = useState<boolean>(false);
   const variants = {
     visible: { opacity: 1 },

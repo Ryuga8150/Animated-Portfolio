@@ -4,9 +4,8 @@ import styles from "./Navbar.module.scss";
 
 import { motion } from "framer-motion";
 import Sidebar from "../sidebar/Sidebar";
-type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <Sidebar />
