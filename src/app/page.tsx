@@ -6,11 +6,16 @@ import Services from "@/components/services/Services";
 import Portfolio from "@/components/portfolio/Portfolio";
 import Contact from "@/components/contact/Contact";
 import Cursor from "@/components/cursor/Cursor";
+import { getCategoryOfProjects } from "@/libs/queries";
 // import Test from "./Test";
 
 type Props = {};
 
-function App({}: Props) {
+const page = async (props: Props) => {
+  const projectCategory = await getCategoryOfProjects();
+
+  if (!projectCategory) return;
+
   return (
     <div>
       <Cursor />
@@ -27,13 +32,17 @@ function App({}: Props) {
       <section id="Portfolio">
         <Parallax type="portfolio" />
       </section>
-      <Portfolio />
+      <Portfolio
+        title="Featured Works"
+        type="category"
+        items={projectCategory}
+      />
       <section id="Contact">
         <Contact />
       </section>
       {/* <Test /> */}
     </div>
   );
-}
+};
 
-export default App;
+export default page;

@@ -79,7 +79,7 @@
 
         h2 {
           font-size: 72px;
-
+          text-align: center;
           @include mobile {
             font-size: 36px;
           }
@@ -88,19 +88,41 @@
         p {
           color: gray;
           font-size: 20px;
+          text-align: center;
 
           @include mobile {
             font-size: 16px;
           }
         }
 
-        button {
-          background-color: orange;
-          border: none;
-          border-radius: 10px;
-          padding: 10px;
-          width: 200px;
-          cursor: pointer;
+        .categoryLinkBtn {
+          // display: flex;
+          display: flex;
+          justify-content: center;
+          button {
+            background-color: orange;
+            color: #f6f6f6;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #fff;
+              color: orange;
+            }
+          }
+        }
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 24px;
+          font-size: 24px;
         }
       }
     }
