@@ -10,7 +10,7 @@ const NodeProjectsPage = async (props: Props) => {
 
   return (
     <div>
-      <Portfolio title="React Haven" items={projects} />
+      <Portfolio title="Node.js Haven" items={projects} />
     </div>
   );
 };

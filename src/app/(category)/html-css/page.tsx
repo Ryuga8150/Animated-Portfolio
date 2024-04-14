@@ -10,7 +10,7 @@ const HtmlCssProjectsPage = async (props: Props) => {
 
   return (
     <div>
-      <Portfolio title="React Haven" items={projects} />
+      <Portfolio title="World of HTM, CSS, And JS" items={projects} />
     </div>
   );
 };

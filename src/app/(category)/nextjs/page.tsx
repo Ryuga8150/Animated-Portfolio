@@ -10,7 +10,7 @@ const NextJsProjectsPage = async (props: Props) => {
 
   return (
     <div>
-      <Portfolio title="React Haven" items={projects} />
+      <Portfolio title="Next.js Haven" items={projects} />
     </div>
   );
 };

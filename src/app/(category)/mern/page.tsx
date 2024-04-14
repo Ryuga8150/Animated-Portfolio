@@ -10,7 +10,7 @@ const MERNProjectsPage = async (props: Props) => {
 
   return (
     <div>
-      <Portfolio title="React Haven" items={projects} />
+      <Portfolio title="MERN Haven" items={projects} />
     </div>
   );
 };
