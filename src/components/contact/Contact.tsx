@@ -66,15 +66,15 @@ const Contact = () => {
         <motion.h1>Let&apos;s Work Together</motion.h1>
         <motion.div className={styles.item} variants={variants}>
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <span>paras13.1.4@gmail.com</span>
         </motion.div>
         <motion.div className={styles.item} variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
+          <h2>Linked In</h2>
+          <span>www.linkedin.com/in/paras-rawat-baa527291/</span>
         </motion.div>
         <motion.div className={styles.item} variants={variants}>
           <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>+91-9289463122</span>
         </motion.div>
       </motion.div>
       <div className={styles.formContainer}>

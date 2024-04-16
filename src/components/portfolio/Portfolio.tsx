@@ -32,7 +32,7 @@ const Single = ({ item, type }: SingleProps): JSX.Element => {
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.imageContainer} ref={ref}>
-            <img src={item.img} alt="" />
+            <img src={item.img} alt="Technology Logo" />
           </div>
           <motion.div className={styles.textContainer} style={{ y }}>
             <h2>{item.title}</h2>
@@ -40,17 +40,25 @@ const Single = ({ item, type }: SingleProps): JSX.Element => {
 
             {type === "category" ? (
               <Link
-                href={item.categoryLink || ""}
+                href={item.categoryLink as string}
                 className={styles.categoryLinkBtn}
               >
                 <button>Show Projects</button>
               </Link>
             ) : (
               <div>
-                <Link href={item.githubLink || ""} target="_blank">
+                <Link
+                  href={item.githubLink as string}
+                  target="_blank"
+                  className="z-[999]"
+                >
                   Github 🐱‍💻
                 </Link>
-                <Link href={item.hostLink || ""} target="_blank">
+                <Link
+                  href={item.hostLink as string}
+                  target="_blank"
+                  className="z-[999]"
+                >
                   Hosted Site 🚀
                 </Link>
               </div>

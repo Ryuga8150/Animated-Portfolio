@@ -7,6 +7,7 @@ import Portfolio from "@/components/portfolio/Portfolio";
 import Contact from "@/components/contact/Contact";
 import Cursor from "@/components/cursor/Cursor";
 import { getCategoryOfProjects } from "@/libs/queries";
+import SkillsSection from "@/components/skills";
 // import Test from "./Test";
 
 type Props = {};
@@ -24,13 +25,14 @@ const page = async (props: Props) => {
         <Hero />
       </section>
       <section id="Services">
-        <Parallax type="services" />
+        <Parallax text="What I Learned?" mode="dark" />
       </section>
       <section>
-        <Services />
+        <SkillsSection />
+        {/* <Services /> */}
       </section>
       <section id="Portfolio">
-        <Parallax type="portfolio" />
+        <Parallax text="What I Did?" mode="light" />
       </section>
       <Portfolio
         title="Featured Works"

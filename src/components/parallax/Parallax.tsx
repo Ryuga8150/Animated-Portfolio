@@ -9,10 +9,11 @@ import {
 } from "framer-motion";
 
 type Props = {
-  type: string;
+  text: string;
+  mode: "dark" | "light";
 };
 
-const Parallax = ({ type }: Props) => {
+const Parallax = ({ text, mode }: Props) => {
   const ref = useRef(null);
   const { scrollY, scrollYProgress } = useScroll({
     target: ref,
@@ -31,13 +32,14 @@ const Parallax = ({ type }: Props) => {
       ref={ref}
       style={{
         background:
-          type === "services"
+          mode === "dark"
             ? "linear-gradient(180deg, #111132, #0c0c1d)"
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
       <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "What We Do?" : "What We Did?"}
+        {/* {type === "services" ? "What We Do?" : "What We Did?"} */}
+        {text}
       </motion.h1>
       <motion.div className={styles.mountains}></motion.div>
       <motion.div style={{ y: yBg }} className={styles.planets}></motion.div>
